@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body,
+        div,
+        form,
+        input,
+        select {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 100;
+            margin: 10;
+            outline: none;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            line-height: 22px;
+        }
+        h1 {
+            text-align: center;
+            margin: 15px 0 4px;
+            
+        }
+        h2 {
+            text-align: center;
+            margin: 15px 0 4px;
+            
+        }
+        p {
+            text-align: center;
+            margin: 15px 0 4px;
+            color: rgb(212, 63, 63);
+        }
+        .button {
+            text-align: center;
+        width: 50%;
+        padding: 8px;
+        color: #ffffff;
+        background: none #43c37d;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 1px 0;
+        text-align: center;
+        }
+        input {
+            width: calc(100% - 10px);
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            vertical-align: middle;
+        }
+        h3 {
+            text-align: center;
+            margin: 15px 0 4px;
+            
+        }
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: url() no-repeat;
+        background-size: cover;
+        }
+        form {
+            width: 37%;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px #ccc;
+        }
+        .ids {
+            display: flex;
+            padding: 8px 0;
+            justify-content: center;
+            align-items: center;
+            height: inherit;
+            padding: 3px;
+        }
+        .Crime {
+            display: flex;
+            padding: 8px 0;
+            justify-content: center;
+            align-items: center;
+            height: inherit;
+            padding: 3px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <form name="FIR" id="FIR" action="FIR.php" method="post">
+    <div class="textbox">
+        <h1>File FIR</h1>
+        <h3>Please fill following details to File FIR.</h3>
+        <p>Make sure you fill correct information</p>
+        <p>Fake entries would be prosecuted</p>
+        <label>First Name : </label>
+        <input type="textbox" name="FName" id="FName" placeholder="Enter First Name" required><br>
+        <label>Middle Name : </label>
+        <input type="textbox" name="MName" id="MName" placeholder="Enter Middle Name" required><br>
+        <label>Last Name : </label>
+        <input type="textbox" name="LName" id="LName" placeholder="Enter Last Name" required><br>
+        <label>D.O.B. : </label>
+        <input type="date" name="DOB" id="DOB" required><br>
+        <label>Contact No : </label>
+        <input type="textbox" name="ContactNo" id="ContactNo" placeholder="Enter Middle Name" required><br>
+        <label>Adhaar ID : </label>
+        <input type="textbox" name="AdhaarID" id="AdhaarID" placeholder="Enter AdhaarID" required><br>
+    </div>
+    <div id="Crime">
+        <label>Type of crime: </label><br>
+        <select name="Class" id="Class" required><br>
+            <option>Robbery/Theft</option>
+            <option>Murder</option>
+            <option>Arsony</option>
+            <option>Sexual</option>
+            <option>Cyber</option>
+            <option>Hostage</option>
+            <option>Terrorism</option>
+            </select><br>
+        <label>Date of Occurence : </label>
+        <input type="date" name="Date" id="Date" required><br>
+        <label>Time of Occurence : </label>
+        <input type="time" name="time" id="time" required><br>
+        <label>Street where crime occured : </label>
+        <input type="textbox" name="CStreet" id="CStreet" required><br>
+        <label>Nearby Landmark : </label>
+        <input type="textbox" name="CLandmark" id="CLandmark" required><br>
+        <label>Taluka of the street : </label><br>
+        <select name="CWard" id="CWard" required><br>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>E</option>
+            <option>F</option>
+            <option>G</option>
+            <option>H</option>
+            <option>K</option>
+            <option>L</option>
+            <option>M</option>
+            <option>N</option>
+            <option>P</option>
+            <option>R</option>
+            <option>S</option>
+            <option>T</option>
+            </select><br>
+        <label>Pincode of street: </label> :
+        <input type="textbox" name="CPincode" id="CPincode" required><br>
+    </div>
+    <div id="ids">
+        <label>Registerer's Apartment Addresss : </label>
+        <input type="textbox" name="PApartment" id="PApartment" required><br>
+        <label>Registerer's Street Addresss : </label>
+        <input type="textbox" name="PStreet" id="PStreet" required><br>
+        <label>Registerer's nearby Landmark : </label>
+        <input type="textbox" name="PLandmark" id="PLandmark" required><br>
+        <label>Registerer's Ward : </label><br>
+        <select name="PWard" id="PWard" required><br>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>E</option>
+            <option>F</option>
+            <option>G</option>
+            <option>H</option>
+            <option>K</option>
+            <option>L</option>
+            <option>M</option>
+            <option>N</option>
+            <option>P</option>
+            <option>R</option>
+            <option>S</option>
+            <option>T</option>
+            </select><br>
+        <label>Registerer's Pincode : </label>
+        <input type="textbox" name="PPincode" id="PPincode" required><br>
+    </div>
+    <div class="description">
+        <label>Detailed Summary of crime : </label><br>
+        <textarea name="Description" id="Description" rows="5" cols="50" required></textarea><br>
+    </div>
+    <div class="button">
+        <input class="button" type="submit"
+        name="login" value="File FIR">
+    </div>
+   </form> 
+</body>
+</html>
